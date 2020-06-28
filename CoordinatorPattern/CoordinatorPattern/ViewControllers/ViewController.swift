@@ -12,6 +12,8 @@ class ViewController: UIViewController, Storyboarded {
     
     weak var coordinator: MainCoordinator?
 
+    @IBOutlet var selectedProduct: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,7 +23,7 @@ class ViewController: UIViewController, Storyboarded {
     }
 
     @IBAction func buyTapped(sender: UIButton) {
-        coordinator?.buySubsriptions()
+        coordinator?.buySubsriptions(to: selectedProduct.selectedSegmentIndex)
     }
     
     @IBAction func createAccountTapped(sender: UIButton) {

@@ -31,16 +31,28 @@
                                     <action selector="createAccountTappedWithSender:" destination="kwO-dg-7xX" eventType="touchUpInside" id="rap-6D-GCT"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DLt-F3-amD">
+                                <rect key="frame" x="106.5" y="437.5" width="201" height="32"/>
+                                <segments>
+                                    <segment title="Macbook Pro"/>
+                                    <segment title="Macbook Air"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BdA-aE-wuC" firstAttribute="centerX" secondItem="D1e-El-obK" secondAttribute="centerX" id="0rq-lH-NCj"/>
+                            <constraint firstItem="DLt-F3-amD" firstAttribute="centerX" secondItem="D1e-El-obK" secondAttribute="centerX" id="T2I-rH-Agt"/>
+                            <constraint firstItem="DLt-F3-amD" firstAttribute="centerY" secondItem="D1e-El-obK" secondAttribute="centerY" id="VQp-Wa-THE"/>
                             <constraint firstItem="5xX-YV-mvN" firstAttribute="centerX" secondItem="D1e-El-obK" secondAttribute="centerX" id="X2h-54-f1t"/>
                             <constraint firstItem="5xX-YV-mvN" firstAttribute="top" secondItem="D1e-El-obK" secondAttribute="top" constant="140" id="p2v-Xd-oQe"/>
                             <constraint firstItem="BdA-aE-wuC" firstAttribute="top" secondItem="5xX-YV-mvN" secondAttribute="bottom" constant="40" id="zsQ-k5-EuW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D1e-El-obK"/>
                     </view>
+                    <connections>
+                        <outlet property="selectedProduct" destination="DLt-F3-amD" id="MHN-1H-DED"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QpS-6x-wVZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

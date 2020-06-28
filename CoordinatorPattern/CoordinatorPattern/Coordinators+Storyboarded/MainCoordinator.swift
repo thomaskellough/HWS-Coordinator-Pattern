@@ -23,7 +23,7 @@ class MainCoordinator: Coordinator {
         vc.coordinator = self
     }
     
-    func buySubsriptions() {
+    func buySubsriptions(to productType: Int) {
         let vc = BuyViewController.instantiate()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
