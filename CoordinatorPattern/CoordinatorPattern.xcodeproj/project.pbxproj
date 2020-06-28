@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1A22CC24A83CA900AB4A27 /* Buying.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1A22CB24A83CA900AB4A27 /* Buying.swift */; };
 		BC365E2824A4369E006CDF96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC365E2724A4369E006CDF96 /* AppDelegate.swift */; };
 		BC365E2A24A4369E006CDF96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC365E2924A4369E006CDF96 /* SceneDelegate.swift */; };
 		BC365E2C24A4369E006CDF96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC365E2B24A4369E006CDF96 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC1A22CB24A83CA900AB4A27 /* Buying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buying.swift; sourceTree = "<group>"; };
 		BC365E2424A4369E006CDF96 /* CoordinatorPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC365E2724A4369E006CDF96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC365E2924A4369E006CDF96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC1A22CA24A83C9800AB4A27 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BC1A22CB24A83CA900AB4A27 /* Buying.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		BC365E1B24A4369E006CDF96 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		BC365E2624A4369E006CDF96 /* CoordinatorPattern */ = {
 			isa = PBXGroup;
 			children = (
+				BC1A22CA24A83C9800AB4A27 /* Protocols */,
 				BC365E4024A43914006CDF96 /* ViewControllers */,
 				BC365E3B24A4371C006CDF96 /* Coordinators+Storyboarded */,
 				BC365E2724A4369E006CDF96 /* AppDelegate.swift */,
@@ -171,6 +182,7 @@
 			files = (
 				BC365E3D24A4372D006CDF96 /* Coordinator.swift in Sources */,
 				BC365E4224A43B9D006CDF96 /* MainCoordinator.swift in Sources */,
+				BC1A22CC24A83CA900AB4A27 /* Buying.swift in Sources */,
 				BC365E2C24A4369E006CDF96 /* ViewController.swift in Sources */,
 				BC365E3F24A43813006CDF96 /* Storyboarded.swift in Sources */,
 				BC365E4624A43E7C006CDF96 /* CreateAccountViewController.swift in Sources */,

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MainCoordinator: Coordinator {
+class MainCoordinator: Coordinator, Buying, AccountCreating {
     var navigationController: UINavigationController
     var children = [Coordinator]()
     
@@ -23,7 +23,7 @@ class MainCoordinator: Coordinator {
         vc.coordinator = self
     }
     
-    func buySubsriptions() {
+    func buySubscription() {
         let vc = BuyViewController.instantiate()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
