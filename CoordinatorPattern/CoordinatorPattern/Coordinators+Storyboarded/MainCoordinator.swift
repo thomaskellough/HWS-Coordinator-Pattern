@@ -20,7 +20,13 @@ class MainCoordinator: Coordinator, Buying, AccountCreating {
     func start() {
         let vc = ViewController.instantiate()
         navigationController.pushViewController(vc, animated: true)
-        vc.coordinator = self
+//        vc.coordinator = self
+        vc.buyAction = { [weak self] in
+            self?.buySubscription()
+        }
+        vc.createAccountAction = { [weak self] in
+            self?.createAccount()
+        }
     }
     
     func buySubscription() {
