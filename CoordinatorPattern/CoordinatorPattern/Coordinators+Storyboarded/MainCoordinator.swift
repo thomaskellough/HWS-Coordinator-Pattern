@@ -3,13 +3,13 @@
 //  CoordinatorPattern
 //
 //  Created by Thomas Kellough on 6/24/20.
-//  Copyright © 2020 Brandt Information Services. All rights reserved.
+//  Copyright © 2020 . All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class MainCoordinator: Coordinator {
+class MainCoordinator: Coordinator, Buying, AccountCreating {
     var navigationController: UINavigationController
     var children = [Coordinator]()
     
@@ -20,10 +20,16 @@ class MainCoordinator: Coordinator {
     func start() {
         let vc = ViewController.instantiate()
         navigationController.pushViewController(vc, animated: true)
-        vc.coordinator = self
+//        vc.coordinator = self
+        vc.buyAction = { [weak self] in
+            self?.buySubscription()
+        }
+        vc.createAccountAction = { [weak self] in
+            self?.createAccount()
+        }
     }
     
-    func buySubsriptions() {
+    func buySubscription() {
         let vc = BuyViewController.instantiate()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)

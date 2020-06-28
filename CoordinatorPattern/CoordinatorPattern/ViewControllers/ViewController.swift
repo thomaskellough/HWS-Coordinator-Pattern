@@ -3,14 +3,17 @@
 //  CoordinatorPattern
 //
 //  Created by Thomas Kellough on 6/24/20.
-//  Copyright © 2020 Brandt Information Services. All rights reserved.
+//  Copyright © 2020 . All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController, Storyboarded {
     
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: (Buying & AccountCreating)?
+    
+    var buyAction: (() -> Void)?
+    var createAccountAction: (() -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +24,15 @@ class ViewController: UIViewController, Storyboarded {
     }
 
     @IBAction func buyTapped(sender: UIButton) {
-        coordinator?.buySubsriptions()
+//        coordinator?.buySubscription()
+        // using closures instead
+        buyAction?()
     }
     
     @IBAction func createAccountTapped(sender: UIButton) {
-        coordinator?.createAccount()
+//        coordinator?.createAccount()
+        // using closures instead
+        createAccountAction?()
     }
 
 }
