@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1A22C924A8392D00AB4A27 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1A22C824A8392D00AB4A27 /* MainTabBarController.swift */; };
 		BC365E2824A4369E006CDF96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC365E2724A4369E006CDF96 /* AppDelegate.swift */; };
 		BC365E2A24A4369E006CDF96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC365E2924A4369E006CDF96 /* SceneDelegate.swift */; };
 		BC365E2C24A4369E006CDF96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC365E2B24A4369E006CDF96 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC1A22C824A8392D00AB4A27 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		BC365E2424A4369E006CDF96 /* CoordinatorPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC365E2724A4369E006CDF96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC365E2924A4369E006CDF96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				BC365E2B24A4369E006CDF96 /* ViewController.swift */,
 				BC365E4324A43E73006CDF96 /* BuyViewController.swift */,
 				BC365E4524A43E7C006CDF96 /* CreateAccountViewController.swift */,
+				BC1A22C824A8392D00AB4A27 /* MainTabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			files = (
 				BC365E3D24A4372D006CDF96 /* Coordinator.swift in Sources */,
 				BC365E4224A43B9D006CDF96 /* MainCoordinator.swift in Sources */,
+				BC1A22C924A8392D00AB4A27 /* MainTabBarController.swift in Sources */,
 				BC365E2C24A4369E006CDF96 /* ViewController.swift in Sources */,
 				BC365E3F24A43813006CDF96 /* Storyboarded.swift in Sources */,
 				BC365E4624A43E7C006CDF96 /* CreateAccountViewController.swift in Sources */,

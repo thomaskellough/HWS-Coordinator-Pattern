@@ -3,7 +3,7 @@
 //  CoordinatorPattern
 //
 //  Created by Thomas Kellough on 6/24/20.
-//  Copyright © 2020 Brandt Information Services. All rights reserved.
+//  Copyright © 2020 "". All rights reserved.
 //
 
 import Foundation

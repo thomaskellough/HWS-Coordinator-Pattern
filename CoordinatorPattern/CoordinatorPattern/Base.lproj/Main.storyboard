@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xX-YV-mvN">
-                                <rect key="frame" x="169.5" y="184" width="75" height="34"/>
+                                <rect key="frame" x="169.5" y="289.5" width="75" height="34"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Buy" image="hare.fill" catalog="system"/>
                                 <connections>
@@ -24,7 +24,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdA-aE-wuC">
-                                <rect key="frame" x="98" y="258" width="218" height="34"/>
+                                <rect key="frame" x="98" y="363.5" width="218" height="34"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Create Account" image="tortoise.fill" catalog="system"/>
                                 <connections>
@@ -42,11 +42,11 @@
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BdA-aE-wuC" firstAttribute="centerX" secondItem="D1e-El-obK" secondAttribute="centerX" id="0rq-lH-NCj"/>
+                            <constraint firstItem="DLt-F3-amD" firstAttribute="top" secondItem="BdA-aE-wuC" secondAttribute="bottom" constant="40" id="HWU-2z-O0n"/>
                             <constraint firstItem="DLt-F3-amD" firstAttribute="centerX" secondItem="D1e-El-obK" secondAttribute="centerX" id="T2I-rH-Agt"/>
                             <constraint firstItem="DLt-F3-amD" firstAttribute="centerY" secondItem="D1e-El-obK" secondAttribute="centerY" id="VQp-Wa-THE"/>
                             <constraint firstItem="5xX-YV-mvN" firstAttribute="centerX" secondItem="D1e-El-obK" secondAttribute="centerX" id="X2h-54-f1t"/>
-                            <constraint firstItem="5xX-YV-mvN" firstAttribute="top" secondItem="D1e-El-obK" secondAttribute="top" constant="140" id="p2v-Xd-oQe"/>
-                            <constraint firstItem="BdA-aE-wuC" firstAttribute="top" secondItem="5xX-YV-mvN" secondAttribute="bottom" constant="40" id="zsQ-k5-EuW"/>
+                            <constraint firstItem="BdA-aE-wuC" firstAttribute="top" secondItem="5xX-YV-mvN" secondAttribute="bottom" constant="40" id="jaK-na-44O"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D1e-El-obK"/>
                     </view>

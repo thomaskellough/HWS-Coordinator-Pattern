@@ -3,7 +3,7 @@
 //  CoordinatorPattern
 //
 //  Created by Thomas Kellough on 6/24/20.
-//  Copyright © 2020 Brandt Information Services. All rights reserved.
+//  Copyright © 2020 "". All rights reserved.
 //
 
 import Foundation
@@ -21,6 +21,7 @@ class MainCoordinator: Coordinator {
         let vc = ViewController.instantiate()
         navigationController.pushViewController(vc, animated: true)
         vc.coordinator = self
+        vc.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
     }
     
     func buySubsriptions(to productType: Int) {
